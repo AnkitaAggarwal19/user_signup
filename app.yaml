@@ -1,0 +1,13 @@
+application: template-lesson
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: user_signup.app
+
+libraries:
+- name: jinja2
+  version: latest
+
